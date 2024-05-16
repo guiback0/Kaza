@@ -8,7 +8,7 @@ function Header() {
             <Link to={"/"}>
                <img
                   className="headerLogo"
-                  src="/src/assets/Logo.svg"
+                  src="/src/assets/redLogo.svg"
                   alt="Logo Kasa"
                />
             </Link>
