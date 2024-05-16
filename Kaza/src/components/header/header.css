@@ -1,0 +1,13 @@
+header {
+   display: flex;
+   justify-content: space-between;
+}
+
+.headerLogo {
+   width: 145px;
+}
+
+ul {
+   display: flex;
+   gap: 26px;
+}

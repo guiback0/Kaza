@@ -2,19 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 /* import "./index.css"; */
 import { createBrowserRouter, NavLink, RouterProvider } from "react-router-dom";
+import App from "./pages/App";
 
 const router = createBrowserRouter([
    {
       path: "/",
-      element: (
-         <div>
-            Main
-            <nav>
-               <NavLink to="/">Main</NavLink>
-               <NavLink to="/about">A propos</NavLink>
-            </nav>
-         </div>
-      ),
+      element: <App />,
       children: [
          {
             path: "/about",
