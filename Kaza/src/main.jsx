@@ -1,15 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-/* import "./index.css"; */
-import { createBrowserRouter, NavLink, RouterProvider } from "react-router-dom";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./pages/App";
+import NotFound from "./pages/error/NotFound";
 
 const router = createBrowserRouter([
    {
       path: "/",
       element: <App />,
+      errorElement: <NotFound />,
       children: [
-         {
+        /*  {
             path: "/about",
             element: (
                <div>
@@ -20,15 +22,11 @@ const router = createBrowserRouter([
                   </nav>
                </div>
             ),
-         },
+         }, */
          /* {
-           path: "/logement/:id",
-           element: <Logement />,
-        }, */
-         {
-            path: "*",
-            element: <div>404</div>,
-         },
+            path: "/logement/:id",
+            element: <Logement />,
+         }, */
       ],
    },
 ]);
