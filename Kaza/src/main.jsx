@@ -9,7 +9,6 @@ const router = createBrowserRouter([
    {
       path: "/",
       element: <App />,
-      errorElement: <NotFound />,
       children: [
         /*  {
             path: "/about",
@@ -27,6 +26,10 @@ const router = createBrowserRouter([
             path: "/logement/:id",
             element: <Logement />,
          }, */
+          {
+            path: "*",
+            element: <NotFound />,
+         }, 
       ],
    },
 ]);
