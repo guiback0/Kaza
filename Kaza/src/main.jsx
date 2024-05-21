@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./pages/App";
 import Index from "./pages/index/Index";
 import NotFound from "./pages/error/NotFound";
+import About from "./pages/about/About";
 
 const router = createBrowserRouter([
    {
@@ -12,21 +13,13 @@ const router = createBrowserRouter([
       element: <App />,
       children: [
          {
-            index: true, // Utilisez "index: true" au lieu de "path: "/" pour la route d'index
-            element: <Index />, 
+            index: true,
+            element: <Index />,
          },
-         /*  {
+         {
             path: "/about",
-            element: (
-               <div>
-                  About
-                  <nav>
-                     <NavLink to="/">Main</NavLink>
-                     <NavLink to="/about">A propos</NavLink>
-                  </nav>
-               </div>
-            ),
-         }, */
+            element: <About />,
+         },
          /* {
             path: "/logement/:id",
             element: <Logement />,

@@ -1,0 +1,47 @@
+.dropdown {
+   margin: 20px 0;
+   text-align: left;
+   width: 100%;
+
+   button {
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Montserrat", sans-serif;
+      background: red;
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      cursor: pointer;
+
+      svg {
+         transition: 0.35s;
+
+         &.rotate-arrow {
+            transform: rotate(180deg);
+         }
+      }
+   }
+
+   .dropdown-menu {
+      color: black;
+      border-radius: 5px;
+      margin: 0 20px;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.35s ease;
+
+      &.dropdown-open {
+         max-height: 200px;
+      }
+
+      p {
+         font-size: 12px;
+      }
+   }
+}
