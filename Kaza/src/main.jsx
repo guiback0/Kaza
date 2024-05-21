@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./index.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./pages/App";
 import NotFound from "./pages/error/NotFound";
@@ -10,7 +10,7 @@ const router = createBrowserRouter([
       path: "/",
       element: <App />,
       children: [
-        /*  {
+         /*  {
             path: "/about",
             element: (
                <div>
@@ -26,10 +26,10 @@ const router = createBrowserRouter([
             path: "/logement/:id",
             element: <Logement />,
          }, */
-          {
+         {
             path: "*",
             element: <NotFound />,
-         }, 
+         },
       ],
    },
 ]);
