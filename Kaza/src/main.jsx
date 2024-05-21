@@ -4,6 +4,7 @@ import "./index.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./pages/App";
 import Index from "./pages/index/Index";
+import Rent from "./pages/rent/Rent";
 import NotFound from "./pages/error/NotFound";
 import About from "./pages/about/About";
 
@@ -20,10 +21,10 @@ const router = createBrowserRouter([
             path: "/about",
             element: <About />,
          },
-         /* {
+         {
             path: "/logement/:id",
-            element: <Logement />,
-         }, */
+            element: <Rent />,
+         },
          {
             path: "*",
             element: <NotFound />,

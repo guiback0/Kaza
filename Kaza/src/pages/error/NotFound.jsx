@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./notFound.scss";
 
-function notFound() {
+export default function notFound() {
    return (
       <div className="notFound">
          <h2 className="err404">404</h2>
@@ -15,4 +15,3 @@ function notFound() {
    );
 }
 
-export default notFound;

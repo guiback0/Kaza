@@ -1,6 +1,6 @@
 import "./banner.scss";
 
-function Banner() {
+export default function Banner() {
    return (
       <div className="banner">
          <img
@@ -12,5 +12,3 @@ function Banner() {
       </div>
    );
 }
-
-export default Banner;

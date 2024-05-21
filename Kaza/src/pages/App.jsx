@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 
-function App() {
+export default function App() {
    return (
       <div>
          <Header />
@@ -11,5 +11,3 @@ function App() {
       </div>
    );
 }
-
-export default App;

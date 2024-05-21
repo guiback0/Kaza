@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./footer.scss";
 
-function Footer() {
+export default function Footer() {
    return (
       <footer>
          <div className="logo">
@@ -17,5 +17,3 @@ function Footer() {
       </footer>
    );
 }
-
-export default Footer;

@@ -1,7 +1,7 @@
 import AboutBanner from "../../components/banner/AboutBanner";
 import DropdownParagraph from "../../components/dropdown/DropdownParagraph";
 
-function About() {
+export default function About() {
    return (
       <div>
          <AboutBanner />
@@ -24,5 +24,3 @@ function About() {
       </div>
    );
 }
-
-export default About;

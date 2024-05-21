@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./card.scss";
 
-export default function Card({ title, cover }) {
+export default function Card({ id, title, cover }) {
    const cardStyle = {
       background: `url(${cover})`,
       backgroundSize: "cover",
@@ -9,9 +9,9 @@ export default function Card({ title, cover }) {
    };
    return (
       <>
-         <Link to={"/"}>
+         <Link to={`/logement/${id}`}>
             <div className="card" style={cardStyle}>
-               <p className="cardTitle">{title}</p>
+               <h3 className="cardTitle">{title}</h3>
             </div>
          </Link>
       </>

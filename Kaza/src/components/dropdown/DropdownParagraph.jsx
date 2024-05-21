@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./dropdown.scss";
 
-function DropdownParagraph({ title, text }) {
+export default function DropdownParagraph({ title, text }) {
    const [isOpen, setIsOpen] = useState(false);
 
    const toggleDropdown = () => {
@@ -30,5 +30,3 @@ function DropdownParagraph({ title, text }) {
       </div>
    );
 }
-
-export default DropdownParagraph;

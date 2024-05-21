@@ -2,7 +2,7 @@ import Banner from "../../components/banner/Banner";
 import Card from "../../components/card/Card";
 import logements from "../../data/logements.json";
 
-function Index() {
+export default function Index() {
    return (
       <div>
          <Banner />
@@ -21,5 +21,3 @@ function Index() {
       </div>
    );
 }
-
-export default Index;
