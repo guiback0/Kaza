@@ -13,7 +13,7 @@ function DropdownParagraph({ title, text }) {
          <button className="dropdown-toggle" onClick={toggleDropdown}>
             <h2>{title}</h2>
             <svg
-               className={`arrow ${isOpen ? "rotate-arrow" : ""}`}
+               className={`${isOpen ? "rotate-arrow" : ""}`}
                width="16"
                viewBox="0 0 32 33"
                fill="none"
@@ -24,7 +24,7 @@ function DropdownParagraph({ title, text }) {
                />
             </svg>
          </button>
-         <div className={`dropdown-menu ${isOpen ? "dropdown-open" : ""}`}>
+         <div className={`dropdown-paragraph ${isOpen ? "dropdown-open" : ""}`}>
             <p>{text}</p>
          </div>
       </div>

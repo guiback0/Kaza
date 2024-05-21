@@ -1,6 +1,7 @@
+@import "../../index.scss";
+
 .dropdown {
    margin: 20px 0;
-   text-align: left;
    width: 100%;
 
    button {
@@ -9,7 +10,7 @@
       align-items: center;
       justify-content: space-between;
       font-family: "Montserrat", sans-serif;
-      background: red;
+      background: $main-color;
       color: white;
       font-size: 13px;
       font-weight: 700;
@@ -28,7 +29,7 @@
       }
    }
 
-   .dropdown-menu {
+   .dropdown-paragraph {
       color: black;
       border-radius: 5px;
       margin: 0 20px;
