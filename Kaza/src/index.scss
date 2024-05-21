@@ -15,6 +15,7 @@ $grayDark: #e3e3e3;
 body {
    box-sizing: border-box;
    margin: 20px;
+   width: calc(100% - 40px);
    min-width: 320px;
    min-height: 100vh;
 
