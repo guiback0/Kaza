@@ -10,7 +10,7 @@ export default function Index() {
             <div className="grid">
                {logements.map((logement) => (
                   <Card
-                     key={logement.id}
+                     key={`${logement.title}-${logement.id}`}
                      id={logement.id}
                      title={logement.title}
                      cover={logement.cover}
