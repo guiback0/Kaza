@@ -2,7 +2,7 @@
 
 .card {
    position: relative;
-   margin-top: 22px;
+   margin-bottom: 20px;
    display: flex;
    justify-content: left;
    align-items: flex-end;
@@ -11,17 +11,16 @@
    border-radius: 10px;
    overflow: hidden;
    transition: 0.2s ease-in-out;
-   /* background: url($cover) no-repeat center center; */
    background-size: cover;
 
-   /*   &:hover {
+   &:hover {
       box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
          rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-   } */
+   }
 
    .cardTitle {
       position: relative;
-      padding-left: 20px;
+      padding: 0 20px;
       font-size: 18px;
       font-weight: 700;
       color: white;

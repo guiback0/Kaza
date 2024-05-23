@@ -1,3 +1,9 @@
+import logements from "../../data/logements.json";
+
 export default function Rent() {
-   return <div>1111</div>;
+   return (
+      <div className="pagesContainer">
+         <p>aaa</p>
+      </div>
+   );
 }
