@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import PropTypes from "prop-types";
 import "./dropdown.scss";
 
 export default function DropdownParagraph({ title, text }) {
@@ -30,3 +31,8 @@ export default function DropdownParagraph({ title, text }) {
       </div>
    );
 }
+
+DropdownParagraph.propTypes = {
+   title: PropTypes.string.isRequired,
+   text: PropTypes.string.isRequired,
+};
