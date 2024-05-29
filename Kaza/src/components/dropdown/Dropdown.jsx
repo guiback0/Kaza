@@ -2,7 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import "./dropdown.scss";
 
-export default function DropdownParagraph({ title, text }) {
+export default function Dropdown({ title, text }) {
    const [isOpen, setIsOpen] = useState(false);
 
    const toggleDropdown = () => {
@@ -25,14 +25,18 @@ export default function DropdownParagraph({ title, text }) {
                />
             </svg>
          </button>
-         <div className={`dropdown-paragraph ${isOpen ? "dropdown-open" : ""}`}>
-            <p>{text}</p>
-         </div>
+         <ul className={`dropdown-content ${isOpen ? "dropdown-open" : ""}`}>
+            {Array.isArray(text) ? (
+               text.map((item, index) => <li key={index}>{item}</li>)
+            ) : (
+               <li>{text}</li>
+            )}
+         </ul>
       </div>
    );
 }
 
-DropdownParagraph.propTypes = {
+Dropdown.propTypes = {
    title: PropTypes.string.isRequired,
-   text: PropTypes.string.isRequired,
+   text: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,
 };

@@ -29,10 +29,10 @@
       }
    }
 
-   .dropdown-paragraph {
+   .dropdown-content {
       color: black;
-      border-radius: 5px;
-      margin: 0 20px;
+      margin: 10px 20px;
+      padding: 0;
       overflow: hidden;
       max-height: 0;
       transition: max-height 0.35s ease;
@@ -41,7 +41,7 @@
          max-height: 200px;
       }
 
-      p {
+      li {
          font-size: 12px;
       }
    }

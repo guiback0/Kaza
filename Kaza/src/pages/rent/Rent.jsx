@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import logements from "../../data/logements.json";
 import NotFound from "../error/NotFound";
 import Badge from "../../components/badge/Badge";
+import Dropdown from "../../components/dropdown/Dropdown";
 
 export default function Rent() {
    const { id } = useParams();
@@ -22,6 +23,14 @@ export default function Rent() {
                {logement.tags.map((tag) => (
                   <Badge key={tag} tag={tag} />
                ))}
+            </div>
+            <div className="rentDropdown">
+               <div className="dropdownDescription">
+                  <Dropdown title="Description" text={logement.description} />
+               </div>
+               <div className="dropdownEquipements">
+                  <Dropdown title="Équipements" text={logement.equipments} />
+               </div>
             </div>
          </div>
       </div>
