@@ -14,18 +14,23 @@ $grayDark: #e3e3e3;
 
 body {
    box-sizing: border-box;
-   margin: 20px;
+   margin: 0 20px 20px 20px;
    width: calc(100% - 40px);
    min-width: 320px;
-   min-height: 100vh;
 
-   a {
-      font-weight: 500;
-      color: black;
-      text-decoration: none;
-   }
+   .app {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
 
-   li {
-      list-style: none;
+      a {
+         font-weight: 500;
+         color: black;
+         text-decoration: none;
+      }
+
+      li {
+         list-style: none;
+      }
    }
 }
