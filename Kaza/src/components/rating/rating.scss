@@ -1,0 +1,15 @@
+@import "../../index.scss";
+
+.rating {
+   display: flex;
+   gap: 4px;
+   font-size: 13px;
+
+   .filledStar {
+      color: $main-color;
+   }
+
+   .emptyStar {
+      color: gray;
+   }
+}
