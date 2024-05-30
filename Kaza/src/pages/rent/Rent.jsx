@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import "./rent.scss";
 import logements from "../../data/logements.json";
 import NotFound from "../error/NotFound";
+import Carousel from "../../components/carousel/Carousel";
 import Badge from "../../components/badge/Badge";
 import Dropdown from "../../components/dropdown/Dropdown";
 import Rating from "../../components/rating/Rating";
@@ -17,6 +18,9 @@ export default function Rent() {
 
    return (
       <div className="pagesContainer">
+         <div className="rentPictures">
+            <Carousel pictures={logement.pictures} />
+         </div>
          <div className="rentTitle">
             <h1>{logement.title}</h1>
          </div>
