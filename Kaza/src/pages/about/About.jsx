@@ -1,9 +1,10 @@
 import AboutBanner from "../../components/banner/AboutBanner";
 import Dropdown from "../../components/dropdown/Dropdown";
+import "./about.scss";
 
 export default function About() {
    return (
-      <div>
+      <div className="pagesContainer">
          <AboutBanner />
          <Dropdown
             title="Fiabilité"

@@ -23,4 +23,29 @@
       width: 225px;
       height: 48px;
    }
+   @media screen and (min-width: 600px) {
+      .imgBanner {
+         height: 150px;
+         border-radius: 20px;
+      }
+
+      .textBanner {
+         top: 20%;
+         left: auto;
+
+         font-size: 30px;
+         width: auto;
+      }
+   }
+
+   @media screen and (min-width: 1024px) {
+      .imgBanner {
+         height: 223px;
+         border-radius: 25px;
+      }
+      .textBanner {
+         font-size: 48px;
+         top: 25%;
+      }
+   }
 }

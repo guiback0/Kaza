@@ -3,14 +3,11 @@ import "./badge.scss";
 
 export default function Badge({ tag }) {
    return (
-     <>
-       <div className="badge">
+      <div className="badge">
          <span>{tag}</span>
-       </div>
-     </>
+      </div>
    );
- }
-
+}
 
 Badge.propTypes = {
    tag: PropTypes.string.isRequired,
