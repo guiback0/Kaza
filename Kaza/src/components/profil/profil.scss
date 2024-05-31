@@ -15,8 +15,20 @@
 }
 
 .picture {
-   border-radius: 300px;
+   border-radius: 50%;
    width: 32px;
    height: 32px;
    margin-left: 10px;
+}
+
+@media screen and (min-width: 600px) {
+   .name {
+      font-size: 18px;
+      max-width: 110px;
+   }
+
+   .picture {
+      width: 64px;
+      height: 64px;
+   }
 }

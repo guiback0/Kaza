@@ -6,10 +6,11 @@ header {
    background-color: white;
    justify-content: space-between;
    padding: 20px 0 20px 0;
-   font-size: 12px;
 
-   .headerLogo {
-      width: 145px;
+   .logo {
+      .headerLogo {
+         width: 145px;
+      }
    }
 
    nav {
@@ -25,6 +26,17 @@ header {
       padding: 20px 50px 0 50px;
       font-size: 18px;
 
+      .logo {
+         .headerLogo {
+            width: 180px;
+         }
+      }
+   
+
+      ul {
+         gap: 57px;
+      }
+
       .headerLogo {
          width: 180px;
       }
@@ -35,6 +47,13 @@ header {
    header {
       padding: 45px 100px 0 100px;
       font-size: 24px;
+
+      .logo {
+         .headerLogo {
+            width: 210px;
+         }
+      }
+   
 
       .headerLogo {
          width: 210px;

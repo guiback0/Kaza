@@ -1,6 +1,42 @@
+@import "../../main.scss";
+
 .rentInfo {
    display: flex;
    align-items: center;
    justify-content: space-between;
    margin-bottom: -20px;
 }
+
+
+.rentTitle {
+   margin-bottom: 10px;
+   color: $main-color;
+
+   font-size: 18px;
+   font-weight: 500;
+}
+
+.rentLocation {
+   color: black;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 19.96px;
+}
+
+.rentRating {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+@media screen and (min-width: 1024px) {
+   .rentDropdown {
+      display: flex;
+      
+     flex-direction: row;
+     justify-content: space-between;
+     gap: 2vw;
+   }
+  
+ }
