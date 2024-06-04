@@ -23,7 +23,11 @@
       width: 225px;
       height: 48px;
    }
-   @media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 600px) {
+   .banner {
+      margin-bottom: 38px;
       .imgBanner {
          height: 150px;
          border-radius: 20px;
