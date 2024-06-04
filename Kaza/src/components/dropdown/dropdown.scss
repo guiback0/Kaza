@@ -1,10 +1,6 @@
 @import "../../main.scss";
 
 .dropdown {
-   margin: 20px 0;
-   width: 100%;
-   justify-content: center;
-
    button {
       height: 30px;
       display: flex;
@@ -55,8 +51,12 @@
       button {
          max-width: 1024px;
          height: 54px;
-        
+
          font-size: 24px;
+         padding: 0 15px;
+      }
+
+      .dropdown-content li {
          font-size: 18px;
       }
    }

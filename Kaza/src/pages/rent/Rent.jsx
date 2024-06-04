@@ -21,28 +21,34 @@ export default function Rent() {
          <div className="rentPictures">
             <Carousel pictures={logement.pictures} />
          </div>
-         <div className="rentTitle">
-            <h1>{logement.title}</h1>
-         </div>
-         <div className="rentLocation">
-            {logement.location.split("-").reverse().join(", ")}
-         </div>
-         <div className="rentBadges">
-            {logement.tags.map((tag) => (
-               <Badge key={tag} tag={tag} />
-            ))}
-         </div>
-         <div className="rentInfo">
-            <div className="rentRating">
-               <Rating rating={logement.rating} />
+         <div className="rentContent">
+            <div className="rentInfo">
+               <div className="rentTitle">
+                  <h1>{logement.title}</h1>
+               </div>
+               <div className="rentLocation">
+                  {logement.location.split("-").reverse().join(", ")}
+               </div>
+               <div className="rentBadges">
+                  {logement.tags.map((tag) => (
+                     <Badge key={tag} tag={tag} />
+                  ))}
+               </div>
             </div>
-            <div className="rentProfil">
-               <Profil
-                  hostName={logement.host.name}
-                  hostPicture={logement.host.picture}
-               />
+
+            <div className="renter">
+               <div className="rentRating">
+                  <Rating rating={logement.rating} />
+               </div>
+               <div className="rentProfil">
+                  <Profil
+                     hostName={logement.host.name}
+                     hostPicture={logement.host.picture}
+                  />
+               </div>
             </div>
          </div>
+
          <div className="rentDropdown">
             <div className="dropdownDescription">
                <Dropdown title="Description" text={logement.description} />

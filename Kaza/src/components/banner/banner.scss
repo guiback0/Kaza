@@ -30,22 +30,30 @@
       }
 
       .textBanner {
-         top: 20%;
-         left: auto;
-
-         font-size: 30px;
-         width: auto;
+         transform: translate(30px, 10px);
+         line-height: 36px;
+         font-size: 36px;
+         width: 350px;
       }
    }
+}
 
-   @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
+   .banner {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       .imgBanner {
          height: 223px;
          border-radius: 25px;
       }
       .textBanner {
+         transform: none;
+         top: 215px;
+         left: 0;
+         width: 100%;
+         height: auto;
          font-size: 48px;
-         top: 25%;
       }
    }
 }

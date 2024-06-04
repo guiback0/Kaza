@@ -20,7 +20,7 @@ export default function Carousel({ pictures }) {
 
    return (
       <div className="carousel">
-         <div className="carouselNav">
+         <div className="carousel__nav">
             <button onClick={prevSlide}>
                <FontAwesomeIcon icon={faChevronLeft} />
             </button>
@@ -29,7 +29,7 @@ export default function Carousel({ pictures }) {
             </button>
          </div>
          <img
-            className="carouselPictures"
+            className="carousel__pictures"
             src={pictures[currentIndex]}
             alt=""
          />

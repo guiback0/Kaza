@@ -1,14 +1,17 @@
 @import "../../main.scss";
 
-.rentInfo {
+.rentDropdown {
    display: flex;
-   align-items: center;
+   flex-direction: column;
    justify-content: space-between;
-   margin-bottom: -20px;
+   width: 100%;
 }
 
+.rentContent {
+   width: 100%;
+}
 
-.rentTitle {
+.rentTitle h1 {
    margin-bottom: 10px;
    color: $main-color;
 
@@ -23,20 +26,43 @@
    line-height: 19.96px;
 }
 
-.rentRating {
+.renter {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
+.dropdownDescription,
+.dropdownEquipements {
+   width: 100%;
+}
 
 @media screen and (min-width: 1024px) {
-   .rentDropdown {
+   .rentContent {
       display: flex;
-      
-     flex-direction: row;
-     justify-content: space-between;
-     gap: 2vw;
+      justify-content: space-between;
+      width: 100%;
    }
-  
- }
+   .rentDropdown {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2vw;
+   }
+   .rentTags {
+      margin-top: 20px;
+   }
+   .rentTitle h1 {
+      font-size: 36px;
+   }
+
+   .rentLocation {
+      font-size: 18px;
+   }
+   .renter {
+      
+      padding: 20px 0;
+      gap: 10px;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+   }
+}

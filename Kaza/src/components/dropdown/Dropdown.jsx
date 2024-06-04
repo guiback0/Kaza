@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import "./dropdown.scss";
 
 export default function Dropdown({ title, text }) {
@@ -17,7 +17,7 @@ export default function Dropdown({ title, text }) {
             <h2>{title}</h2>
             <FontAwesomeIcon
                className={`${isOpen ? "rotate-arrow" : ""}`}
-               icon={faChevronDown}
+               icon={faChevronUp}
             />
          </button>
          <ul className={`dropdown-content ${isOpen ? "dropdown-open" : ""}`}>
