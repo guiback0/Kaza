@@ -1,4 +1,4 @@
-import AboutBanner from "../../components/banner/AboutBanner";
+import Banner from "../../components/banner/Banner";
 import Dropdown from "../../components/dropdown/Dropdown";
 import "./about.scss";
 
@@ -21,10 +21,16 @@ const aboutData = [
    },
 ];
 
+const bannerProps = {
+   imageSrc: "./src/assets/landscape2.jpeg",
+   imageAlt: "photographie d'une montagne et d'un fleuve",
+};
+
+
 export default function About() {
    return (
       <div className="pagesContainer">
-         <AboutBanner />
+         <Banner {...bannerProps} />
          <div className="dropdownContainer">
             {aboutData.map((item, index) => (
                <Dropdown key={index} title={item.title} text={item.text} />
