@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./header.scss";
 
-export default function Header({ navigation, logoUrl, alt }) {
+export default function Header({ navigation, headerLogo, imageAlt }) {
    return (
       <header>
          <div className="logo">
             <Link to={"/"}>
-               <img className="headerLogo" src={logoUrl} alt={alt} />
+               <img className="headerLogo" src={headerLogo} alt={imageAlt} />
             </Link>
          </div>
          <nav className="nav">
@@ -26,8 +26,8 @@ export default function Header({ navigation, logoUrl, alt }) {
 }
 
 Header.propTypes = {
-   logoUrl: PropTypes.string.isRequired,
-   alt: PropTypes.string.isRequired,
+   headerLogo: PropTypes.string.isRequired,
+   imageAlt: PropTypes.string.isRequired,
    navigation: PropTypes.arrayOf(
       PropTypes.shape({
          name: PropTypes.string.isRequired,

@@ -13,17 +13,19 @@ const navigation = [
    },
 ];
 
-const headerLogo = "/src/assets/redLogo.svg";
-const footerLogo = "/src/assets/whiteLogo.svg";
-const altText = "Logo Kasa";
-const copyrightText = "© 2020 Kaza. All rights reserved";
-
-export default function App() {
+const headerAndFooter = {
+   headerLogo: "/src/assets/redLogo.svg",
+   footerLogo: "/src/assets/whiteLogo.svg",
+   imageAlt: "Logo Kasa",
+   copyrightText: "© 2020 Kaza. All rights reserved"
+ };
+ 
+ export default function App() {
    return (
-      <div className="app">
-         <Header navigation={navigation} logoUrl={headerLogo} alt={altText} />
-         <Outlet />
-         <Footer logoUrl={footerLogo} copyrightText={copyrightText} alt={altText} />
-      </div>
+     <div className="app">
+       <Header navigation={navigation} {...headerAndFooter} />
+       <Outlet />
+       <Footer {...headerAndFooter} />
+     </div>
    );
-}
+ }

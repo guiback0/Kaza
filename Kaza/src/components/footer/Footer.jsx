@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./footer.scss";
 
-export default function Footer({ logoUrl, copyrightText, alt }) {
+export default function Footer({ footerLogo, copyrightText, imageAlt }) {
    return (
       <footer>
          <div className="logo">
             <Link to={"/"}>
-               <img className="footerLogo" src={logoUrl} alt={alt} />
+               <img className="footerLogo" src={footerLogo} alt={imageAlt} />
             </Link>
          </div>
          <p>{copyrightText}</p>
@@ -16,7 +16,7 @@ export default function Footer({ logoUrl, copyrightText, alt }) {
 }
 
 Footer.propTypes = {
-   logoUrl: PropTypes.string.isRequired,
-   alt: PropTypes.string.isRequired,
+   footerLogo: PropTypes.string.isRequired,
+   imageAlt: PropTypes.string.isRequired,
    copyrightText: PropTypes.string.isRequired,
 };
