@@ -1,12 +1,11 @@
-import "./banner.scss";
 import PropTypes from "prop-types";
-
+import "./banner.scss";
 
 export default function Banner({ imageSrc, imageAlt, title }) {
    return (
       <div className="banner">
-         <img className="imgBanner" src={imageSrc} alt={imageAlt} />
-         {title && <h2 className="textBanner">{title}</h2>}
+         <img className="banner__img" src={imageSrc} alt={imageAlt} />
+         {title && <h2 className="banner__title">{title}</h2>}
       </div>
    );
 }
