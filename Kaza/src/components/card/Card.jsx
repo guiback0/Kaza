@@ -4,14 +4,15 @@ import "./card.scss";
 
 export default function Card({ id, title, cover }) {
    const cardStyle = {
-      background: `url(${cover}) no-repeat center/cover`,
-      position: "relative",
+      backgroundImage: `url(${cover})`,
+      backgroundPosition: "center",
+      backgroundSize: "cover",
    };
 
    return (
-      <Link to={`/logement/${id}`}>
+      <Link to={`/logement/${id}`} className="card-link">
          <div className="card" style={cardStyle}>
-            <h3 className="cardTitle">{title}</h3>
+            <h3 className="card__title">{title}</h3>
          </div>
       </Link>
    );
