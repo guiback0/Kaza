@@ -4,17 +4,17 @@ import "./header.scss";
 
 export default function Header({ navigation, headerLogo, imageAlt }) {
    return (
-      <header>
-         <div className="logo">
+      <header className="header">
+         <div className="header__logo">
             <Link to={"/"}>
-               <img className="headerLogo" src={headerLogo} alt={imageAlt} />
+               <img className="header__logo-img" src={headerLogo} alt={imageAlt} />
             </Link>
          </div>
-         <nav className="nav">
-            <ul>
+         <nav className="header__nav">
+            <ul className="header__nav-list">
                {navigation.map((item) => (
-                  <li key={item.name}>
-                     <Link to={item.path}>
+                  <li className="header__nav-item" key={item.name}>
+                     <Link to={item.path} className="header__nav-link">
                         <span>{item.name}</span>
                      </Link>
                   </li>
