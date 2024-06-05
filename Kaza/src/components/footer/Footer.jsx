@@ -4,13 +4,13 @@ import "./footer.scss";
 
 export default function Footer({ footerLogo, copyrightText, imageAlt }) {
    return (
-      <footer>
-         <div className="logo">
+      <footer className="footer">
+         <div className="footer__logo">
             <Link to={"/"}>
-               <img className="footerLogo" src={footerLogo} alt={imageAlt} />
+               <img className="footer__logo-img" src={footerLogo} alt={imageAlt} />
             </Link>
          </div>
-         <p>{copyrightText}</p>
+         <p className="footer__copyright">{copyrightText}</p>
       </footer>
    );
 }

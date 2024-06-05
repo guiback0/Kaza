@@ -1,4 +1,4 @@
-footer {
+.footer {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -9,16 +9,21 @@ footer {
    height: 209px;
    width: calc(100% + 40px);
    margin-left: -20px;
+   box-sizing: border-box;
 
-   p {
-      width: 133px;
-      text-align: center;
+   &__logo {
+      .footer__logo-img {
+         width: 145px;
+      }
    }
 
-   @media screen and (min-width: 600px) {
-      p {
-        font-size: 24px;
-        width: 100%;
+   &__copyright {
+      width: 133px;
+      text-align: center;
+
+      @media screen and (min-width: 600px) {
+         font-size: 24px;
+         width: 100%;
       }
-    }
+   }
 }
