@@ -15,7 +15,9 @@
          width: 145px;
       }
    }
-
+   &__nav-link[aria-current="page"] {
+      border-bottom: 2px solid black;
+   }
    &__nav {
       &-list {
          display: flex;
