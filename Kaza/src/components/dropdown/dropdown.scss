@@ -56,11 +56,14 @@
 @media screen and (min-width: 600px) {
    .dropdown {
       max-width: 1024px;
+      .dropdown-title {
+         font-size: 24px;
+      }
 
       .dropdown-toggle {
-         height: 60px;
-         font-size: 16px;
-         padding: 0 30px;
+         height: 52px;
+         font-size: 20px;
+         padding: 0 20px;
       }
 
       .dropdown-content li {
@@ -71,14 +74,6 @@
 
 @media screen and (min-width: 1024px) {
    .dropdown {
-     
-
-      .dropdown-toggle {
-         height: 80px;
-         font-size: 20px;
-         padding: 0 50px;
-      }
-
       .dropdown-content li {
          font-size: 16px;
       }
