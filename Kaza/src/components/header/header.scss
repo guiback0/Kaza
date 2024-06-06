@@ -1,9 +1,12 @@
 .header {
+   box-sizing: border-box;
+   width: 100%;
    display: flex;
    position: sticky;
    top: 0;
    z-index: 1000;
 
+   align-items: center;
    background-color: white;
    justify-content: space-between;
    padding: 20px 20px;
@@ -22,7 +25,7 @@
    }
 
    @media screen and (min-width: 600px) {
-      padding: 20px ;
+      padding: 20px;
       font-size: 18px;
 
       &__logo {
@@ -39,10 +42,9 @@
    }
 
    @media screen and (min-width: 1024px) {
-      padding: 40px 150px 20px;
-     
+      padding: 40px 50px 20px;
       font-size: 24px;
-      max-width: 1240px;
+      max-width: 1340px;
 
       &__logo {
          .header__logo-img {
