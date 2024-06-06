@@ -4,9 +4,7 @@ import "./card.scss";
 
 export default function Card({ id, title, cover }) {
    const cardStyle = {
-      backgroundImage: `url(${cover})`,
-      backgroundPosition: "center",
-      backgroundSize: "cover",
+      background: `url(${cover}) no-repeat center/cover`,
    };
 
    return (

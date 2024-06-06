@@ -4,7 +4,7 @@
    display: inline-flex;
    align-items: center;
    justify-content: center;
-   background: $main-color;
+   background-color: $main-color;
    margin-right: 2vw;
    padding: 0 5px;
    border-radius: 6px;
@@ -12,12 +12,9 @@
    height: 18px;
    font-size: 10px;
    font-weight: 700;
-   white-space: nowrap;
    color: white;
-}
 
-@media screen and (min-width: 600px) {
-   .badge {
+   @media screen and (min-width: 600px) {
       min-width: 115px;
       height: 25px;
       font-size: 14px;

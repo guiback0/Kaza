@@ -1,4 +1,5 @@
 .carousel {
+   position: relative; 
    display: flex;
    align-items: center;
    width: 100%;
@@ -13,25 +14,25 @@
    }
 
    &__nav {
-      margin: auto;
-     
-      max-width: 1240px;
       position: absolute;
-      left: 0;
-      right: 0;
-      padding: 20px;
+      top: 50%; 
+      transform: translateY(-50%);
+      left: 20px; 
+      right: 20px; 
+      padding: 0; 
       display: flex;
       justify-content: space-between;
-      
       z-index: 1;
 
       @media screen and (min-width: 1024px) {
-         padding: 100PX;
+         left: 60px;
+         right: 60px;
       }
 
       button {
-         padding: 0 2%;
-         background-color: transparent;
+         padding: 10px;
+         background-color: rgba(0, 0, 0, 0.5);
+         border-radius: 20px;
          border: none;
          font-size: 20px;
          color: white;
@@ -44,13 +45,25 @@
          @media screen and (min-width: 1024px) {
             font-size: 80px;
          }
+
+         &:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+         }
       }
    }
 
    &__pictures {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       object-fit: cover;
       width: 100%;
-      object-fit: cover;
+      height: 255px;
       object-position: center;
+
+      @media screen and (min-width: 600px) {
+         height: 415px;
+      }
    }
 }

@@ -7,7 +7,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./carousel.scss";
 
-export default function Carousel({ pictures }) {
+const altText = "Carousel d'images du logement ";
+
+export default function Carousel({ pictures, name }) {
    const [currentIndex, setCurrentIndex] = useState(0);
 
    const prevSlide = () => {
@@ -31,7 +33,7 @@ export default function Carousel({ pictures }) {
          <img
             className="carousel__pictures"
             src={pictures[currentIndex]}
-            alt=""
+            alt={altText + name}
          />
       </div>
    );
@@ -39,4 +41,5 @@ export default function Carousel({ pictures }) {
 
 Carousel.propTypes = {
    pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
+   name: PropTypes.string.isRequired,
 };

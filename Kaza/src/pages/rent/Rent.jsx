@@ -19,7 +19,7 @@ export default function Rent() {
    return (
       <div className="pagesContainer">
          <div className="rentPictures">
-            <Carousel pictures={logement.pictures} />
+            <Carousel pictures={logement.pictures} name={logement.title} />
          </div>
          <div className="rentContent">
             <div className="rentInfo">
