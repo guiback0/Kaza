@@ -1,32 +1,37 @@
 @import "../../main.scss";
 
 .dropdown {
-   
-   h2{
+   width: 100%;
+   margin: 0 auto;
+
+   .dropdown-title {
       margin: 0;
+      font-size: 16px;
+      font-weight: 700;
    }
-   button {
+
+   .dropdown-toggle {
       height: 30px;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-family: "Montserrat", sans-serif;
       background: $main-color;
       color: white;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 700;
-      padding: 10px;
+      padding: 0 10px;
       border: none;
       border-radius: 5px;
-      width: 100%;
       cursor: pointer;
+   }
 
-      svg {
-         transition: 0.35s;
+   .dropdown-icon {
+      transition: 0.35s;
 
-         &.rotate-arrow {
-            transform: rotate(180deg);
-         }
+      &.rotate-arrow {
+         transform: rotate(180deg);
       }
    }
 
@@ -51,17 +56,31 @@
 @media screen and (min-width: 600px) {
    .dropdown {
       max-width: 1024px;
-      width: 100%;
-      button {
-         max-width: 1024px;
-         height: 54px;
 
-         font-size: 24px;
-         padding: 0 15px;
+      .dropdown-toggle {
+         height: 60px;
+         font-size: 16px;
+         padding: 0 30px;
       }
 
       .dropdown-content li {
-         font-size: 18px;
+         font-size: 14px;
+      }
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   .dropdown {
+     
+
+      .dropdown-toggle {
+         height: 80px;
+         font-size: 20px;
+         padding: 0 50px;
+      }
+
+      .dropdown-content li {
+         font-size: 16px;
       }
    }
 }

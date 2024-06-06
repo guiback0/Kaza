@@ -8,7 +8,6 @@
 
 .card {
    position: relative;
-   margin-bottom: 20px;
    display: flex;
    justify-content: left;
    align-items: flex-end;
@@ -17,7 +16,10 @@
    border-radius: 10px;
    overflow: hidden;
    transition: 0.2s ease-in-out;
-
+   margin-bottom: 20px;
+   @media screen and (min-width: 600px) {
+      margin-bottom: 0;;
+   }
    &::after {
       content: "";
       position: absolute;

@@ -5,7 +5,7 @@
    z-index: 1000;
    background-color: white;
    justify-content: space-between;
-   padding: 20px 0;
+   padding: 20px 20px;
 
    &__logo {
       .header__logo-img {
@@ -21,7 +21,7 @@
    }
 
    @media screen and (min-width: 600px) {
-      padding: 20px 50px 0;
+      padding: 20px ;
       font-size: 18px;
 
       &__logo {
@@ -38,8 +38,10 @@
    }
 
    @media screen and (min-width: 1024px) {
-      padding: 45px 50px 0;
+      padding: 40px 100px 20px;
+      margin: auto;
       font-size: 24px;
+      max-width: 1240px;
 
       &__logo {
          .header__logo-img {

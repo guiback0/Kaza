@@ -14,9 +14,9 @@ export default function Dropdown({ title, text }) {
    return (
       <div className="dropdown">
          <button className="dropdown-toggle" onClick={toggleDropdown}>
-            <h2>{title}</h2>
+            <h2 className="dropdown-title">{title}</h2>
             <FontAwesomeIcon
-               className={`${isOpen ? "rotate-arrow" : ""}`}
+               className={`dropdown-icon ${isOpen ? "rotate-arrow" : ""}`}
                icon={faChevronUp}
             />
          </button>

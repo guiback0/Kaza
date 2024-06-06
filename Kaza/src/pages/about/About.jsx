@@ -13,11 +13,11 @@ const aboutData = [
    },
    {
       title: "Service",
-      text: "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.",
+      text: "Nous sommes à votre écoute pour vous fournir une expérience de qualité. N'hésitez pas à nous contacter si vous avez des questions ou des suggestions.",
    },
    {
       title: "Sécurité",
-      text: "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
+      text: "La sécurité est notre priorité absolue. Tous les logements proposés sur notre plateforme sont conformes aux normes de sécurité en vigueur.",
    },
 ];
 
@@ -25,7 +25,6 @@ const bannerProps = {
    imageSrc: "./src/assets/landscape2.jpeg",
    imageAlt: "photographie d'une montagne et d'un fleuve",
 };
-
 
 export default function About() {
    return (

@@ -1,8 +1,9 @@
-.dropdownContainer {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: auto;
-   width: 100%;
-   gap: 10px;
+.pagesContainer {
+   .dropdownContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      width: 100%;
+   }
 }

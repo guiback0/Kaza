@@ -1,6 +1,11 @@
-.rentPictures{
+.rentPictures {
    display: flex;
    justify-content: center;
+}
+
+.cards-container {
+   width: 100%;
+   max-width: 1200px;
 }
 
 @media screen and (min-width: 600px) {
@@ -10,9 +15,7 @@
       gap: 60px;
    }
 
-   .cards-container {
-      margin-top: 60px;
-   }
+   
 }
 
 @media screen and (min-width: 1024px) {
@@ -20,9 +23,9 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 60px;
+      padding: 0 40px;
    }
    .cards-container {
-      padding: 50px;
       margin-top: 43px;
    }
 }

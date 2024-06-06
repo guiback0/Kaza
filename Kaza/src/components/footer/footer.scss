@@ -7,8 +7,8 @@
    background: black;
    color: white;
    height: 209px;
-   width: calc(100% + 40px);
-   margin-left: -20px;
+   width: 100%;
+   padding: 0 20px;
    box-sizing: border-box;
 
    &__logo {
@@ -18,12 +18,15 @@
    }
 
    &__copyright {
-      width: 133px;
+      width: 100%;
       text-align: center;
 
       @media screen and (min-width: 600px) {
          font-size: 24px;
-         width: 100%;
       }
+   }
+
+   @media screen and (min-width: 1024px) {
+      padding: 0 100px;
    }
 }
