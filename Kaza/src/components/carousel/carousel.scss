@@ -1,5 +1,5 @@
 .carousel {
-   position: relative; 
+   position: relative;
    display: flex;
    align-items: center;
    width: 100%;
@@ -15,11 +15,11 @@
 
    &__nav {
       position: absolute;
-      top: 50%; 
+      top: 50%;
       transform: translateY(-50%);
-      left: 20px; 
-      right: 20px; 
-      padding: 0; 
+      left: 20px;
+      right: 20px;
+      padding: 0;
       display: flex;
       justify-content: space-between;
       z-index: 1;

@@ -7,7 +7,11 @@ export default function Header({ navigation, headerLogo, imageAlt }) {
       <header className="header">
          <div className="header__logo">
             <Link to={"/"}>
-               <img className="header__logo-img" src={headerLogo} alt={imageAlt} />
+               <img
+                  className="header__logo-img"
+                  src={headerLogo}
+                  alt={imageAlt}
+               />
             </Link>
          </div>
          <nav className="header__nav">

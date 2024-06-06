@@ -3,32 +3,32 @@
 .profil {
    display: flex;
    align-items: center;
-   justify-content: right;
-}
+   justify-content: flex-end; 
+   gap: 10px; 
 
-.name {
-   color: $main-color;
-   font-size: 12px;
-   font-weight: 500;
-   text-align: right;
-   max-width: 50px;
-}
-
-.picture {
-   border-radius: 50%;
-   width: 32px;
-   height: 32px;
-   margin-left: 10px;
-}
-
-@media screen and (min-width: 600px) {
-   .name {
-      font-size: 18px;
-      max-width: 70px;
+   &__name {
+      color: $main-color;
+      font-size: 12px;
+      font-weight: 500;
+      text-align: right;
+      max-width: 50px;
    }
 
-   .picture {
-      width: 64px;
-      height: 64px;
+   &__picture {
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+   }
+
+   @media screen and (min-width: 600px) {
+      &__name {
+         font-size: 18px;
+         max-width: 70px;
+      }
+
+      &__picture {
+         width: 64px;
+         height: 64px;
+      }
    }
 }

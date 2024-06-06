@@ -23,12 +23,16 @@ export default function Carousel({ pictures, name }) {
    return (
       <div className="carousel">
          <div className="carousel__nav">
-            <button onClick={prevSlide}>
-               <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
-            <button onClick={nextSlide}>
-               <FontAwesomeIcon icon={faChevronRight} />
-            </button>
+            {pictures.length > 1 && (
+               <>
+                  <button onClick={prevSlide}>
+                     <FontAwesomeIcon icon={faChevronLeft} />
+                  </button>
+                  <button onClick={nextSlide}>
+                     <FontAwesomeIcon icon={faChevronRight} />
+                  </button>
+               </>
+            )}
          </div>
          <img
             className="carousel__pictures"

@@ -13,14 +13,14 @@ export default function Dropdown({ title, text }) {
 
    return (
       <div className="dropdown">
-         <button className="dropdown-toggle" onClick={toggleDropdown}>
-            <h2 className="dropdown-title">{title}</h2>
+         <button className="dropdown__toggle" onClick={toggleDropdown}>
+            <h2 className="dropdown__title">{title}</h2>
             <FontAwesomeIcon
-               className={`dropdown-icon ${isOpen ? "rotate-arrow" : ""}`}
+               className={`dropdown__icon ${isOpen ? "rotate-arrow" : ""}`}
                icon={faChevronUp}
             />
          </button>
-         <ul className={`dropdown-content ${isOpen ? "dropdown-open" : ""}`}>
+         <ul className={`dropdown__content ${isOpen ? "dropdown-open" : ""}`}>
             {Array.isArray(text) ? (
                text.map((item, index) => <li key={index}>{item}</li>)
             ) : (

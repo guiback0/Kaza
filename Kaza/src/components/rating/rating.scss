@@ -2,19 +2,21 @@
 
 .rating {
    display: flex;
+   align-items: center;
    gap: 4px;
    font-size: 13px;
 
-   .filledStar {
-      color: $main-color;
+   &__star {
+      &--filled {
+         color: $main-color;
+      }
+
+      &--empty {
+         color: gray;
+      }
    }
 
-   .emptyStar {
-      color: gray;
-   }
-}
-@media screen and (min-width: 600px) {
-   .rating {
+   @media screen and (min-width: 600px) {
       font-size: 24px;
       gap: 10px;
    }

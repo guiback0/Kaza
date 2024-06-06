@@ -4,13 +4,13 @@
    width: 100%;
    margin: 0 auto;
 
-   .dropdown-title {
+   &__title {
       margin: 0;
       font-size: 16px;
       font-weight: 700;
    }
 
-   .dropdown-toggle {
+   &__toggle {
       height: 30px;
       width: 100%;
       display: flex;
@@ -27,7 +27,7 @@
       cursor: pointer;
    }
 
-   .dropdown-icon {
+   &__icon {
       transition: 0.35s;
 
       &.rotate-arrow {
@@ -35,7 +35,7 @@
       }
    }
 
-   .dropdown-content {
+   &__content {
       color: black;
       margin: 10px 20px;
       padding: 0;
@@ -51,30 +51,26 @@
          font-size: 12px;
       }
    }
-}
 
-@media screen and (min-width: 600px) {
-   .dropdown {
+   @media screen and (min-width: 600px) {
       max-width: 1024px;
-      .dropdown-title {
+      &__title {
          font-size: 24px;
       }
 
-      .dropdown-toggle {
+      &__toggle {
          height: 52px;
          font-size: 20px;
          padding: 0 20px;
       }
 
-      .dropdown-content li {
+      &__content li {
          font-size: 14px;
       }
    }
-}
 
-@media screen and (min-width: 1024px) {
-   .dropdown {
-      .dropdown-content li {
+   @media screen and (min-width: 1024px) {
+      &__content li {
          font-size: 16px;
       }
    }

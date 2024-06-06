@@ -7,7 +7,11 @@ export default function Footer({ footerLogo, copyrightText, imageAlt }) {
       <footer className="footer">
          <div className="footer__logo">
             <Link to={"/"}>
-               <img className="footer__logo-img" src={footerLogo} alt={imageAlt} />
+               <img
+                  className="footer__logo-img"
+                  src={footerLogo}
+                  alt={imageAlt}
+               />
             </Link>
          </div>
          <p className="footer__copyright">{copyrightText}</p>
