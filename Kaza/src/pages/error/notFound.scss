@@ -5,51 +5,54 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
+
    text-align: center;
    color: $main-color;
    gap: 113px;
-   margin: 113px 0;
+   margin: 63px 0 113px;
+}
 
+.err404 {
+   font-size: 96px;
+   font-weight: 700;
+   color: $main-color;
+   margin: 0;
+}
+
+.errText {
+   font-size: 18px;
+   font-weight: 500;
+   max-width: 260px;
+}
+
+.backHome {
+   text-decoration: underline;
+   font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+   .notFound {
+      margin-top: 0;
+   }
    .err404 {
-      font-size: 96px;
-      font-weight: 700;
-      color: $main-color;
-      margin: 0;
+      height: 200px;
+      font-size: 192px;
    }
-
    .errText {
-      font-size: 18px;
-      font-weight: 500;
-      max-width: 260px;
+      font-size: 26px;
+      max-width: none;
    }
-
    .backHome {
-      text-decoration: underline;
-      font-size: 14px;
-      &:hover {
-         cursor: pointer;
-         color: $main-color;
-      }
+      font-size: 18px;
    }
-   @media screen and (min-width: 600px) {
-      .err404 {
-         font-size: 192px;
-      }
-      .errText {
-         font-size: 26px;
-         max-width: none;
-      }
-      .backHome {
-         font-size: 18px;
-      }
-   }
+}
 
-   @media screen and (min-width: 1024px) {
-      .err404 {
-         font-size: 288px;
-      }
-      .errText {
-         font-size: 36px;
-      }
+@media screen and (min-width: 1024px) {
+   .err404 {
+      font-size: 288px;
+      height: 300px;
+   }
+   .errText {
+      font-size: 36px;
    }
 }
