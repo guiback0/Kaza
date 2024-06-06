@@ -11,7 +11,7 @@ const bannerProps = {
 
 export default function Index() {
    return (
-      <div className="pagesContainer">
+      <div className="index">
          <Banner {...bannerProps} />
          <div className="cards-container">
             <div className="grid">

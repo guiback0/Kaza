@@ -1,58 +1,53 @@
 @import "../../main.scss";
 
-.notFound {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $main-color;
+  gap: 113px;
+  margin: 63px 0 113px;
 
-   text-align: center;
-   color: $main-color;
-   gap: 113px;
-   margin: 63px 0 113px;
-}
+  @media screen and (min-width: 600px) {
+    margin-top: 0;
+  }
 
-.err404 {
-   font-size: 96px;
-   font-weight: 700;
-   color: $main-color;
-   margin: 0;
-}
+  &__error-code {
+    font-size: 96px;
+    font-weight: 700;
+    color: $main-color;
+    margin: 0;
 
-.errText {
-   font-size: 18px;
-   font-weight: 500;
-   max-width: 260px;
-}
-
-.backHome {
-   text-decoration: underline;
-   font-size: 14px;
-}
-
-@media screen and (min-width: 600px) {
-   .notFound {
-      margin-top: 0;
-   }
-   .err404 {
+    @media screen and (min-width: 600px) {
       height: 200px;
       font-size: 192px;
-   }
-   .errText {
-      font-size: 26px;
-      max-width: none;
-   }
-   .backHome {
-      font-size: 18px;
-   }
-}
+    }
 
-@media screen and (min-width: 1024px) {
-   .err404 {
+    @media screen and (min-width: 1024px) {
       font-size: 288px;
       height: 300px;
-   }
-   .errText {
-      font-size: 36px;
-   }
+    }
+  }
+
+  &__error-text {
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 260px;
+
+    @media screen and (min-width: 600px) {
+      font-size: 26px;
+      max-width: none;
+    }
+  }
+
+  &__back-home-link {
+    text-decoration: underline;
+    font-size: 14px;
+
+    @media screen and (min-width: 600px) {
+      font-size: 18px;
+    }
+  }
 }

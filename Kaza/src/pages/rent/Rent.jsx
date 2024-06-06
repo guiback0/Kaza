@@ -16,45 +16,53 @@ export default function Rent() {
       return <NotFound />;
    }
 
+   const {
+      title,
+      location,
+      tags,
+      rating,
+      host,
+      description,
+      equipments,
+      pictures,
+   } = logement;
+
    return (
-      <div className="pagesContainer">
-         <div className="rentPictures">
-            <Carousel pictures={logement.pictures} name={logement.title} />
+      <div className="rent">
+         <div className="rent__pictures">
+            <Carousel pictures={pictures} name={title} />
          </div>
-         <div className="rentContent">
-            <div className="rentInfo">
-               <div className="rentTitle">
-                  <h1>{logement.title}</h1>
+         <div className="rent__content">
+            <div className="rent__info">
+               <div className="rent__title">
+                  <h1>{title}</h1>
                </div>
-               <div className="rentLocation">
-                  {logement.location.split("-").reverse().join(", ")}
+               <div className="rent__location">
+                  {location.split("-").reverse().join(", ")}
                </div>
-               <div className="rentBadges">
-                  {logement.tags.map((tag) => (
+               <div className="rent__badges">
+                  {tags.map((tag) => (
                      <Badge key={tag} tag={tag} />
                   ))}
                </div>
             </div>
 
-            <div className="renter">
-               <div className="rentRating">
-                  <Rating rating={logement.rating} />
+            <div className="rent__renter">
+               <div className="rent__rating">
+                  <Rating rating={rating} />
                </div>
-               <div className="rentProfil">
-                  <Profil
-                     hostName={logement.host.name}
-                     hostPicture={logement.host.picture}
-                  />
+               <div className="rent__profil">
+                  <Profil hostName={host.name} hostPicture={host.picture} />
                </div>
             </div>
          </div>
 
-         <div className="rentDropdown">
-            <div className="dropdownDescription">
-               <Dropdown title="Description" text={logement.description} />
+         <div className="rent__dropdown">
+            <div className="rent__dropdown-item">
+               <Dropdown title="Description" text={description} />
             </div>
-            <div className="dropdownEquipements">
-               <Dropdown title="Équipements" text={logement.equipments} />
+            <div className="rent__dropdown-item">
+               <Dropdown title="Équipements" text={equipments} />
             </div>
          </div>
       </div>

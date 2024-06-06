@@ -1,71 +1,74 @@
 @import "../../main.scss";
 
-.rentDropdown {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   width: 100%;
-}
+.rent {
+   padding: 0 20px;
+   max-width: 1240px;
 
-.rentContent {
-   width: 100%;
-}
-
-.rentTitle h1 {
-   margin-bottom: 10px;
-   color: $main-color;
-   font-size: 18px;
-   font-weight: 500;
-}
-
-.rentLocation {
-   color: black;
-   font-size: 14px;
-   font-weight: 500;
-   line-height: 19.96px;
-}
-
-.rentPictures{
-   width: 100%;
-}
-
-.renter {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-
-.dropdownDescription,
-.dropdownEquipements {
-   width: 100%;
-}
-
-@media screen and (min-width: 1024px) {
-   .rentContent {
-      display: flex;
-      justify-content: space-between;
+   &__pictures {
       width: 100%;
    }
-   .rentDropdown {
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 2vw;
-   }
-   .rentTags {
-      margin-top: 20px;
-   }
-   .rentTitle h1 {
-      font-size: 36px;
+
+   &__content {
+      width: 100%;
+
+      @media screen and (min-width: 1024px) {
+         display: flex;
+         justify-content: space-between;
+         width: 100%;
+      }
    }
 
-   .rentLocation {
-      font-size: 18px;
+   &__title {
+      h1 {
+         margin-bottom: 10px;
+         color: $main-color;
+         font-size: 18px;
+         font-weight: 500;
+
+         @media screen and (min-width: 1024px) {
+            font-size: 36px;
+         }
+      }
    }
-   .renter {
-      
-      padding: 20px 0;
-      gap: 10px;
-      flex-direction: column-reverse;
-      align-items: flex-end;
+
+   &__location {
+      color: black;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 19.96px;
+
+      @media screen and (min-width: 1024px) {
+         font-size: 18px;
+      }
+   }
+
+   &__renter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media screen and (min-width: 1024px) {
+         padding: 20px 0;
+         gap: 10px;
+         flex-direction: column-reverse;
+         align-items: flex-end;
+      }
+   }
+
+   &__dropdown {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+
+      @media screen and (min-width: 1024px) {
+         flex-direction: row;
+         justify-content: space-between;
+         gap: 2vw;
+      }
+   }
+
+   &__dropdown-item {
+      width: 100%;
    }
 }

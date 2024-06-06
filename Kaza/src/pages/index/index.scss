@@ -1,33 +1,24 @@
-.rentPictures {
-   display: flex;
-   justify-content: center;
-}
-
-.cards-container {
-   width: 100%;
-   max-width: 1200px;
-}
-
-@media screen and (min-width: 600px) {
-   .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      margin-bottom: 20px;
-      padding: 0 40px;
-   }
-
-}
-
-@media screen and (min-width: 1024px) {
-   .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 60px;
-      
-      margin-bottom: 60px;
-   }
+.index {
    .cards-container {
-      margin-top: 43px;
+      width: 100%;
+      max-width: 1200px;
+      @media screen and (min-width: 1024px) {
+         margin-top: 43px;
+      }
+   }
+
+   .grid {
+      @media screen and (min-width: 600px) {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 60px;
+         margin-bottom: 20px;
+         padding: 0 40px;
+      }
+      @media screen and (min-width: 1024px) {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         margin-bottom: 60px;
+      }
    }
 }

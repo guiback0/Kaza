@@ -27,14 +27,16 @@ const bannerProps = {
 };
 
 export default function About() {
-   return (
-      <div className="pagesContainer">
-         <Banner {...bannerProps} />
-         <div className="dropdownContainer">
-            {aboutData.map((item, index) => (
-               <Dropdown key={index} title={item.title} text={item.text} />
-            ))}
-         </div>
+  const dropdowns = aboutData.map((item, index) => (
+    <Dropdown key={index} title={item.title} text={item.text} />
+  ));
+
+  return (
+    <div className="about">
+      <Banner {...bannerProps} />
+      <div className="about__dropdown-container">
+        {dropdowns}
       </div>
-   );
+    </div>
+  );
 }
