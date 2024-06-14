@@ -17,15 +17,15 @@ const headerAndFooter = {
    headerLogo: "/src/assets/redLogo.svg",
    footerLogo: "/src/assets/whiteLogo.svg",
    imageAlt: "Logo Kasa",
-   copyrightText: "© 2020 Kaza. All rights reserved"
- };
- 
- export default function App() {
+   copyrightText: "© 2020 Kasa. All rights reserved",
+};
+
+export default function App() {
    return (
-     <div className="app">
-       <Header navigation={navigation} {...headerAndFooter} />
-       <Outlet />
-       <Footer {...headerAndFooter} />
-     </div>
+      <div className="app">
+         <Header navigation={navigation} {...headerAndFooter} />
+         <Outlet />
+         <Footer {...headerAndFooter} />
+      </div>
    );
- }
+}

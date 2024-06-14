@@ -28,6 +28,7 @@ export default function Carousel({ pictures, name }) {
                   <button onClick={prevSlide}>
                      <FontAwesomeIcon icon={faChevronLeft} />
                   </button>
+                  <span className="carousel-number">{currentIndex + 1}/{pictures.length}</span>
                   <button onClick={nextSlide}>
                      <FontAwesomeIcon icon={faChevronRight} />
                   </button>

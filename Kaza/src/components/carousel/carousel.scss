@@ -7,10 +7,29 @@
    border-radius: 10px;
    overflow: hidden;
 
+   .carousel-number {
+      display: block;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: 24px;
+      transform: translateY(400%);
+      font-size: 18px;
+   }
+
    @media screen and (min-width: 600px) {
       max-width: 1240px;
       height: 415px;
       border-radius: 25px;
+      .carousel-number {
+         transform: translateY(700%);
+      }
+   }
+
+   @media screen and (min-width: 1024px) {
+      .carousel-number {
+         transform: translateY(600%);
+      }
    }
 
    &__nav {
